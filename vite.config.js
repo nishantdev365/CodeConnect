@@ -7,18 +7,9 @@ export default defineConfig({
     nodeResolve(),
   ],
   build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: path.resolve(__dirname, 'index.html'),
-        socket: path.resolve(__dirname, 'src', 'socket.js'),
-      },
-      output: {
-        entryFileNames: '[name].js',
-        chunkFileNames: '[name].js',
-        assetFileNames: '[name].[ext]',
-      },
-    },
+    define: {
+      'process.env.MY_APP_ENTRY': JSON.stringify('./src/main.js') // <-- update this line
+    }
   },
   define: {
     'process.env.REACT_APP_BACKEND_URL': JSON.stringify('http://localhost:5000'),
