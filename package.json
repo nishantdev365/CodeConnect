@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start:front": "react-scripts start",
+    "dev": "vite dev",
     "start": "npm run build && npm run server:prod",
     "build": "vite build",
     "preview": "vite preview",
