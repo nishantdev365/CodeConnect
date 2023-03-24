@@ -3,9 +3,13 @@ import { createServer } from "http";
 import path from "path";
 import { Server } from "socket.io";
 import ACTIONS from "./src/Actions.js";
+import * as dotenv from 'dotenv'
+
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
+
+dotenv.config()
 
 app.use(express.static(path.join(process.cwd(), 'dist')));
 app.use((req, res, next) => {
