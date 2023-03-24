@@ -6,7 +6,7 @@
   "scripts": {
     "start:front": "react-scripts start",
     "start": "npm run build && npm run server:prod",
-    "build": "react-scripts build",
+    "build": "vite build",
     "preview": "vite preview",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js"
