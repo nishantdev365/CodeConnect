@@ -1,0 +1,13 @@
+.CodeMirror{
+  min-height: calc(100vh - 105px);
+  padding-top: 10px;
+
+}
+
+
+@media (min-width: 640px) { 
+  .CodeMirror{
+    font-size: 1.2rem;
+  }
+  
+}
