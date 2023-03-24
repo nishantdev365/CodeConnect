@@ -4,8 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "start:front": "react-scripts start",
+    "start": "npm run build && npm run server:prod",
+    "build": "react-scripts build",
     "preview": "vite preview",
     "server:dev": "nodemon server.js",
     "server:prod": "node server.js"
