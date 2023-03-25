@@ -37,6 +37,8 @@ const CodeEditorPage = () => {
         reactNavigator("/");
       }
 
+      const socket = io(`ws://${window.location.hostname}:5000`);
+
       socketRef.current.emit(ACTIONS.JOIN, {
         userId,
         userName: location.state?.userName,
@@ -82,6 +84,7 @@ const CodeEditorPage = () => {
         socketRef.current.off(ACTIONS.DISCONNECTED);
       }
     };
+    
   }, []);
 
   async function copyUserId() {
