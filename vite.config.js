@@ -7,7 +7,7 @@ export default defineConfig({
     nodeResolve(),
   ],
   build: {
-    outDir: '/opt/render/project/dist',
+    outDir: 'dist',
     define: {
       'process.env.MY_APP_ENTRY': JSON.stringify('./src/main.js') // <-- update this line
     }
