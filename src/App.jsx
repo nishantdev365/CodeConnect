@@ -6,9 +6,6 @@ import "./App.css";
 
 function App() {
 
-//   if(process.env.NODE_ENV === 'debug'){
-//     setDebugLevel(1)
-// }
   return (
     <>
       <div>
