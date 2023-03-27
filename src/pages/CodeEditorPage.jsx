@@ -37,7 +37,7 @@ const CodeEditorPage = () => {
         reactNavigator("/");
       }
 
-      const socket = io(`ws://${window.location.hostname}:5000`);
+      // const socket = io(`ws://${window.location.hostname}:5000`);
 
       socketRef.current.emit(ACTIONS.JOIN, {
         userId,
