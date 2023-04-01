@@ -27,7 +27,7 @@ const CodeEditorPage = () => {
 
   useEffect(() => {
     const init = async () => {
-      const serverUrl = "wss://https://code-connect-eight.vercel.app"
+      // const serverUrl = "wss://https://code-connect-eight.vercel.app"
       socketRef.current = await initSocket();
       socketRef.current.on("connect_error", (err) => handleErrors(err));
       socketRef.current.on("connect_failed", (err) => handleErrors(err));

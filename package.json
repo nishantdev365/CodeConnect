@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "server:dev": "nodemon server.js",
-    "server:prod": "node server.js"
+    "server:prod": "node server.js",
+    "deploy": "vite build && gcloud app deploy"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.13",
