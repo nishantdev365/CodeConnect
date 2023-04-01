@@ -8,6 +8,7 @@ import * as dotenv from 'dotenv'
 const app = express();
 const server = createServer(app);
 const io = new Server(server);
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 
 dotenv.config()
 
@@ -15,9 +16,10 @@ dotenv.config()
 // app.use((req, res, next) => {
 //   res.sendFile(path.join(process.cwd(), 'dist', 'index.html'))
 // });
-app.use(express.static(path.join(__dirname, '..', 'dist')));
-app.use((req, res, next) => {
-  res.sendFile(path.join(__dirname, '..', 'dist', 'index.html'))
+app.use(express.static(path.join(process.cwd(), 'dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(process.cwd(), 'dist', 'index.html'));
 });
 
 const userSocketMap = {};
