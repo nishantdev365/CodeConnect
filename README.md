@@ -1,0 +1,1 @@
+# This project is currently undergoing some serious construction work, so please excuse the dust and occasional hammering noises. We're doing our best to turn this into a beautiful mansion, but for now, it's more like a tiny house with a leaky roof. Stay tuned for updates and join us in this chaotic adventure!
