@@ -181,6 +181,8 @@ const EditorPage = ({ socketRef, userId, onCodeChange }) => {
       editorRef.current.getWrapperElement().style.fontSize = fontSize + "px";
     }
   }, [fontSize]);
+  
+  //themes 
 
   const themes = [
     "3024-day",
